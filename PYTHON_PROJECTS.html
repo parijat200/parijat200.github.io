@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 1em;
+            color: white;
+            text-align: center;
+        }
+
+        .page_h {
+            margin: 0;
+        }
+
+        .home_link {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        #project {
+            padding: 2em;
+            background-color: #f9f9f9;
+            margin: 1em 0;
+        }
+
+        .project-container {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            margin-bottom: 1em;
+        }
+
+        .project-pic-container {
+            flex: 1;
+        }
+
+        .project-pic {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-and-buttons {
+            flex: 2;
+        }
+
+        .project-text-container {
+            margin-bottom: 1em;
+        }
+
+        .tools {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .t1 {
+            margin: 0;
+        }
+
+        .t2 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .project-text {
+            margin: 1em 0;
+        }
+
+        .pro-btn-container {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .btn {
+            padding: 0.5em 1em;
+            color: white;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .btn-color-3 {
+            background-color: #007bff;
+        }
+
+        .btn-color-3:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="page_h">Python Project</h1>
+        <a href="index.html" class="home_link">Home</a>
+    </div>
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Sales Analysis</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src="./assets\PYTHON_SALES_ANALYSIS.png" alt="Sales Analysis Image" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">
+                            Tools and Libraries Used:
+                            <ul>
+                                <li>Python: for data manipulation and analysis.</li>
+                                <li>Pandas: for data loading, cleaning, and transformation.</li>
+                                <li>Matplotlib and Seaborn: for data visualization.</li>
+                                <li>Pyarrow: for Feather file format compatibility.</li>
+                            </ul>
+                        </h2>
+                    </div>
+                    <p class="project-text">
+                        Objective:
+                        The objective of this analysis is to gain insights into the sales data of an electronics store, identify patterns and trends, and provide actionable insights for business decision-making. This includes identifying the best month for sales, the city with the maximum orders, the most sold product, and understanding product bundling.
+                    </p>
+                    <p class="project-text">
+                        About The Data:
+                        The dataset comprises YouTube comments and videos data, including details like comment text, likes, dislikes, views, category IDs, and more. The data is stored in CSV and JSON formats, with additional data files to be combined for comprehensive analysis.
+                        </p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/blob/main/SALES_ANALYSIS.ipynb')">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project" style="margin-top: 0;">
+        <h1 class="project_title">Python YouTube Analysis</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src="./assets\PYTHON_YOUTUBE_ANA.jpg" alt="YouTube Analysis Image" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">
+                            Tools and Libraries Used:
+                            <ul>
+                                <li>Python: for data manipulation and analysis.</li>
+                                <li>Pandas: for data loading, cleaning, and transformation.</li>
+                                <li>Matplotlib and Seaborn: for data visualization.</li>
+                                <li>TextBlob: for sentiment analysis.</li>
+                                <li>WordCloud: for generating word clouds.</li>
+                                <li>Emoji: for emoji extraction and analysis.</li>
+                                <li>SQLAlchemy: for database operations.</li>
+                                <li>Plotly: for interactive visualizations.</li>
+                            </ul>
+                        </h2>
+                    </div>
+                    <p class="project-text">
+                        Objective:
+                        The objective of this analysis is to explore and analyze YouTube comments and video data to extract meaningful insights. This includes performing sentiment analysis, identifying patterns in positive and negative comments, analyzing emoji usage, and understanding trends in video engagement and popularity.
+                    </p>
+                    <p class="project-text">
+                        About the Data:
+                        The dataset comprises YouTube comments and video data, including details like comment text, likes, dislikes, views, category IDs, and more. The data is stored in CSV and JSON formats, with additional data files to be combined for comprehensive analysis.
+                    </p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/blob/main/Youtube_analysis_by_Parijat_Prasun.ipynb')">GitHub</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

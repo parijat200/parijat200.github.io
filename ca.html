@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analysis Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar h1 {
+            color: #fff;
+            margin: 0;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+        .title {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 2em;
+            color: #444;
+        }
+        .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .certificate-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            max-width: 300px;
+        }
+        .certificate-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .certificate-item p {
+            margin-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .certificate-item a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .certificate-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Additional Styles for Visual Appeal */
+        body {
+            background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+        }
+        .title {
+            color: #555;
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+        .navbar {
+            background-color: #0073e6;
+        }
+        .navbar a {
+            background: #005bb5;
+            padding: 10px 15px;
+            border-radius: 4px;
+        }
+        .navbar a:hover {
+            background: #004494;
+        }
+        .certificate-item {
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        .certificate-item a {
+            display: block;
+            margin-top: 15px;
+            font-size: 14px;
+            color: #005bb5;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .certificate-item a:hover {
+            color: #004494;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .navbar h1 {
+                font-size: 1.5em;
+            }
+            .navbar a {
+                margin-left: 10px;
+                padding: 8px 12px;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .certificate-item {
+                margin: 10px 5px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="page_h">Awards and Certificates</h1>
+        <a href="index.html" class="home_link">Home</a>
+    </div>
+
+    <section id="Certificates">
+        <h1 class="title">Certificates</h1>
+        <div class="project-container">
+            <div class="certificate-item">
+                <img src="assets/SQL_PYTHON_EXCEL.jpg" alt="OdinSchool certificate">
+                <p>
+                    <a href="https://www.udemy.com/certificate/UC-b7a5c87b-edc0-457c-bfa3-a4678836ede8/" target="_blank">
+                        Data Analyst Skillpath: <br>
+                        Zero to Hero in Excel, SQL & Python
+                    </a>
+                </p>
+            </div>
+            <div class="certificate-item">
+                <img src="assets/POWER_BI.jpg" alt="Power BI Certificate">
+                <p>
+                    <a href="https://www.udemy.com/certificate/UC-ca626d99-9b68-424e-93ba-f98224bf24ec/" target="_blank">
+                        Microsoft Power BI Desktop for Business Intelligence
+                    </a>
+                </p>
+            </div>
+            <div class="certificate-item">
+                <img src="assets/EXCEL_CER.jpg" alt="Advance Excel Certificate">
+                <p>
+                    <a href="https://www.udemy.com/certificate/UC-f7fde013-b0b0-43d7-ae9b-154290dd76fb/" target="_blank">
+                        Advance Excel Certificate
+                    </a>
+                </p>
+            </div>
+            <div class="certificate-item">
+                <img src="assets/PYTHON_CER.jpg" alt="Python Programming">
+                <p>
+                    <a href="https://www.udemy.com/certificate/UC-7a75620b-f994-4983-b00a-24f53b7af59b/" target="_blank">
+                        Python Certificate
+                    </a>
+                </p>
+              </div>
+              <div class="certificate-item">
+                  <img src="assets/365_DATA_ANA_CER.jpg" alt="Data Analyst 365">
+                  <p>
+                      <a href="https://www.udemy.com/certificate/UC-3ffc1494-d74a-4dcb-aade-c93cc71cb6b6/" target="_blank">
+                        The Data Analyst Course
+                    </a>
+                  </p>
+              </div>
+        </div>
+    </section>
+</body>
+</html>

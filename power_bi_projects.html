@@ -1,129 +1,218 @@
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-    .navbar {
-        background-color: #333;
-        padding: 1em;
-        color: white;
-        text-align: center;
-    }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    .page_h {
-        margin: 0;
-    }
+        .navbar {
+            background-color: #333;
+            padding: 1em;
+            color: white;
+            text-align: center;
+        }
 
-    .home_link {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-    }
+        .page_h {
+            margin: 0;
+        }
 
-    #project {
-        padding: 2em;
-        background-color: #f9f9f9;
-        margin: 1em 0;
-    }
+        .home_link {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
 
-    .project-container {
-        display: flex;
-        flex-direction: row;
-        gap: 2em;
-        margin-bottom: 1em;
-    }
+        #project {
+            padding: 2em;
+            background-color: #f9f9f9;
+            margin: 1em 0;
+        }
 
-    .project-pic-container {
-        flex: 1;
-    }
+        .project-container {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            margin-bottom: 1em;
+        }
 
-    .project-pic {
-        width: 100%;
-        height: auto;
-    }
+        .project-pic-container {
+            flex: 1;
+        }
 
-    .text-and-buttons {
-        flex: 2;
-    }
+        .project-pic {
+            width: 100%;
+            height: auto;
+        }
 
-    .project-text-container {
-        margin-bottom: 1em;
-    }
+        .text-and-buttons {
+            flex: 2;
+        }
 
-    .Tools {
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-    }
+        .project-text-container {
+            margin-bottom: 1em;
+        }
 
-    .t1 {
-        margin: 0;
-    }
+        .Tools {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
 
-    .t2 {
-        margin: 0;
-        font-weight: normal;
-    }
+        .t1 {
+            margin: 0;
+        }
 
-    .project-text {
-        margin: 1em 0;
-    }
+        .t2 {
+            margin: 0;
+            font-weight: normal;
+        }
 
-    .pro-btn-container {
-        display: flex;
-        flex-direction: row;
-        gap: 1em;
-    }
+        .project-text {
+            margin: 1em 0;
+        }
 
-    .btn {
-        padding: 0.5em 1em;
-        color: white;
-        background-color: #333;
-        border: none;
-        cursor: pointer;
-        text-align: center;
-    }
+        .pro-btn-container {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
 
-    .btn:hover {
-        background-color: #555;
-    }
+        .btn {
+            padding: 0.5em 1em;
+            color: white;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
 
-    .btn-color-3 {
-        background-color: #007bff;
-    }
+        .btn:hover {
+            background-color: #555;
+        }
 
-    .btn-color-3:hover {
-        background-color: #0056b3;
-    }
-</style>
-<div class="navbar">
-    <h1 class="page_h">Power BI Reports</h1>
-    <a href="index.html" class="home_link">Home</a>
-</div>
-<section id="project" style="padding-top: 12vh; margin-bottom: auto;">
-    <h1 class="project_title">Maven Market Report</h1>
-    <div class="project-container">
-        <div class="project-pic-container">
-            <img src="./assets\Maven_Market_Report_Photo.png" alt="telangana-ppt" class="project-pic" />
-        </div>
-        <div class="text-and-buttons">
-            <div class="project-text-container">
-                <div class="Tools">
-                    <h3 class="t1">Tools:</h3>
-                    <h2 class="t2">SQL Workbench, Power BI</h2>
-                </div>
-                <p class="project-text"><br>This time I'll be working with data from Maven Market, a multi-national grocery chain with locations in Canada, Mexico and the United States. I'll work through the entire business intelligence workflow: connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report.</br></p>
-            </div>
-            <div class="pro-btn-container">
-                <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/blob/main/MAVEN_PROJECT_BULD_BY_PP.pbix')">GitHub</button>
-                <button class="btn btn-color-3" onclick="window.open('https://www.linkedin.com/feed/update/urn:li:activity:7151229414041698304/')">LinkedIn</button>
-                <button class="btn btn-color-3" onclick="window.open('')">YouTube</button>
-                <button class="btn btn-color-3" onclick="window.open('https://app.powerbi.com/groups/me/reports/7090894f-7d6e-41b4-bba5-f926942da43d/47ed216d10b3fcb8eaea?experience=power-bi')">Live Dashboard</button>
-            </div>
-        </div>
+        .btn-color-3 {
+            background-color: #007bff;
+        }
+
+        .btn-color-3:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="page_h">Power BI Reports</h1>
+        <a href="index.html" class="home_link">Home</a>
     </div>
-</section>
-<section></section>
+
+    <!-- Maven Market Report -->
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Maven Market Report</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src="./assets/MAVEN_MARKET_UPDATED.jpg" alt="Maven Market Report" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="Tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">SQL Workbench, Power BI</h2>
+                    </div>
+                    <p class="project-text">This time I'll be working with data from Maven Market, a multi-national grocery chain with locations in Canada, Mexico, and the United States. I'll work through the entire business intelligence workflow: connecting and shaping the data, building a relational model, adding calculated fields, and designing an interactive report.</p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/blob/main/Maven%20Market.pbix')">GitHub</button>
+                    <button class="btn btn-color-3" onclick="window.open('')">LinkedIn</button>
+                    <button class="btn btn-color-3" onclick="window.open('')">YouTube</button>
+                    <button class="btn btn-color-3" onclick="window.open('https://app.powerbi.com/groups/me/reports/9ec5fed1-0977-4d04-af6f-8c0c1ea368a2/d2bda02f7d4350b84069?experience=power-bi')">Live Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Project 1 -->
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Adventure Report</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src=".\assets\ADVENTURE_POWERBI.jpg" alt="Project 1" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="Tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">SQL Workbench, Power BI</h2>
+                    </div>
+                    <p class="project-text">The main objective of this project was to provide the management team at AdventureWorks with a comprehensive and interactive dashboard to track key performance indicators (KPIs) such as sales, revenue, profit, and returns, compare regional performance, analyze product-level trends, and identify high-value customers.</p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/blob/main/MAVEN_PROJECT_BULD_BY_PP.pbix')">GitHub</button>
+                    <button class="btn btn-color-3" onclick="window.open('LINKEDIN_LINK_1')">LinkedIn</button>
+                    <button class="btn btn-color-3" onclick="window.open('YOUTUBE_LINK_1')">YouTube</button>
+                    <button class="btn btn-color-3" onclick="window.open('https://app.powerbi.com/groups/me/reports/02f1a031-a8c8-4804-b163-456936ea0a0f/7cfffd1b979bb555f16f?experience=power-bi')">Live Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Project 2 -->
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Project Title 2</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src="./assets/PROJECT_2_IMAGE.jpg" alt="Project 2" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="Tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">Toolset 2</h2>
+                    </div>
+                    <p class="project-text">Description of Project 2.</p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('GITHUB_LINK_2')">GitHub</button>
+                    <button class="btn btn-color-3" onclick="window.open('LINKEDIN_LINK_2')">LinkedIn</button>
+                    <button class="btn btn-color-3" onclick="window.open('YOUTUBE_LINK_2')">YouTube</button>
+                    <button class="btn btn-color-3" onclick="window.open('LIVE_DASHBOARD_LINK_2')">Live Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Project 3 -->
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Project Title 3</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src="./assets/PROJECT_3_IMAGE.jpg" alt="Project 3" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="Tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">Toolset 3</h2>
+                    </div>
+                    <p class="project-text">Description of Project 3.</p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('GITHUB_LINK_3')">GitHub</button>
+                    <button class="btn btn-color-3" onclick="window.open('LINKEDIN_LINK_3')">LinkedIn</button>
+                    <button class="btn btn-color-3" onclick="window.open('YOUTUBE_LINK_3')">YouTube</button>
+                    <button class="btn btn-color-3" onclick="window.open('LIVE_DASHBOARD_LINK_3')">Live Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

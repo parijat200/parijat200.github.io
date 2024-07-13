@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Reports</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 1em;
+            color: white;
+            text-align: center;
+        }
+
+        .page_h {
+            margin: 0;
+        }
+
+        .home_link {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        #project {
+            padding: 2em;
+            background-color: #f9f9f9;
+            margin: 1em 0;
+        }
+
+        .project-container {
+            display: flex;
+            flex-direction: row;
+            gap: 2em;
+            margin-bottom: 1em;
+        }
+
+        .project-pic-container {
+            flex: 1;
+        }
+
+        .project-pic {
+            width: 100%;
+            height: auto;
+        }
+
+        .text-and-buttons {
+            flex: 2;
+        }
+
+        .project-text-container {
+            margin-bottom: 1em;
+        }
+
+        .Tools {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .t1 {
+            margin: 0;
+        }
+
+        .t2 {
+            margin: 0;
+            font-weight: normal;
+        }
+
+        .project-text {
+            margin: 1em 0;
+        }
+
+        .pro-btn-container {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+        }
+
+        .btn {
+            padding: 0.5em 1em;
+            color: white;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+
+        .btn-color-3 {
+            background-color: #007bff;
+        }
+
+        .btn-color-3:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1 class="page_h">Power BI Reports</h1>
+        <a href="index.html" class="home_link">Home</a>
+    </div>
+
+    <!-- Maven Market Report -->
+    <section id="project" style="padding-top: 12vh; margin-bottom: auto;">
+        <h1 class="project_title">Amazon Sales Analysis</h1>
+        <div class="project-container">
+            <div class="project-pic-container">
+                <img src=".\assets\sql_amazon.jpg" alt="Maven Market Report" class="project-pic" />
+            </div>
+            <div class="text-and-buttons">
+                <div class="project-text-container">
+                    <div class="Tools">
+                        <h3 class="t1">Tools:</h3>
+                        <h2 class="t2">MySQL Workbench</h2>
+                    </div>
+                    <p class="project-text">I performed a detailed sales analysis for Amazon's branches in Mandalay, Yangon, and Naypyitaw. Using advanced data wrangling, feature engineering, and exploratory data analysis, I uncovered valuable insights into product performance, sales trends, and customer behavior. These findings aimed to guide strategic decisions and enhance sales strategies.
+
+                    </p>
+                </div>
+                <div class="pro-btn-container">
+                    <button class="btn btn-color-3" onclick="window.open('https://github.com/parijat200/project/tree/main/AMAZON_ANALYSIS_WITH_SQL')">GitHub</button>
+                    <button class="btn btn-color-3" onclick="window.open('')">LinkedIn</button>
+                    <button class="btn btn-color-3" onclick="window.open('')">YouTube</button>
+                    <button class="btn btn-color-3" onclick="window.open('')">Live Dashboard</button>
+                </div>
+            </div>
+        </div>
+    </section>

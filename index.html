@@ -8,192 +8,16 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <style>
-    /* Black theme background */
-    body {
-      background-color: #121212;
-      color: #fff;
-      font-family: 'Arial', sans-serif;
-    }
-    
-    /* Neon text effect */
-    h1, h2, h3, p {
-      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #ff00ff, 0 0 20px #ff00ff;
-    }
-
-    /* Neon button animation */
-    .btn {
-      position: relative;
-      overflow: hidden;
-      background-color: #333;
-      color: #fff;
-      border: 2px solid #00ff00;
-      border-radius: 5px;
-      padding: 10px 20px;
-      cursor: pointer;
-      text-align: center;
-      transition: color 0.4s, background-color 0.4s;
-    }
-    .btn:hover {
-      background-color: #00ff00;
-      color: #121212;
-    }
-    .btn:active {
-      animation: button-click 0.4s forwards;
-    }
-
-    @keyframes button-click {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(0.9);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    /* Navigation links */
-    .nav-links li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.4s;
-    }
-
-    .nav-links li a:hover {
-      color: #00ff00;
-    }
-
-    /* Profile section */
-    #profile {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 50px;
-      text-align: center;
-    }
-
-    #profile .section__pic-container {
+    .section__pic-container {
       border-radius: 50%;
       overflow: hidden;
-      margin-right: 30px;
-      position: relative;
     }
-
-    #profile img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    #profile .play-button {
+    .play-button {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       cursor: pointer;
-      color: #00ff00;
-      font-size: 30px;
-    }
-
-    /* About section */
-    #about {
-      text-align: center;
-      padding: 50px;
-    }
-
-    #about .about-details-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    #about .about-containers {
-      margin: 0 20px;
-    }
-
-    #about .details-container {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    #about .icon {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-    }
-
-    /* Experience section */
-    #experience {
-      padding: 50px;
-      text-align: center;
-    }
-
-    #experience .experience-details-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    #experience .details-container {
-      background-color: #333;
-      border-radius: 10px;
-      margin: 15px;
-      padding: 20px;
-      width: 250px;
-    }
-
-    /* Projects section */
-    #projects {
-      padding: 50px;
-      text-align: center;
-    }
-
-    #projects .details-container {
-      background-color: #333;
-      border-radius: 10px;
-      margin: 15px;
-      padding: 20px;
-      width: 250px;
-    }
-
-    /* Contact section */
-    #contact {
-      padding: 50px;
-      text-align: center;
-    }
-
-    #contact .contact-info-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    #contact .contact-info-container .icon {
-      width: 30px;
-      height: 30px;
-      margin-right: 10px;
-    }
-
-    footer {
-      background-color: #121212;
-      padding: 20px;
-      text-align: center;
-      color: #fff;
-    }
-
-    footer a {
-      color: #00ff00;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
     }
   </style>
 </head>
@@ -305,7 +129,35 @@
             <article>
               <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
               <div>
-                <h3>Python (Pandas, NumPy)</h3>
+                <h3>Python / Pandas</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>Matplotlib</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>PyMySQL</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>NumPy</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+              <div>
+                <h3>Seaborn</h3>
                 <p>Intermediate</p>
               </div>
             </article>
@@ -313,6 +165,84 @@
         </div>
       </div>
     </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
   </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/microsoft-power-bi.png" alt="Data analysis" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Power BI Projects</h2>
+          <div class="btn-container">
+            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='power_bi_projects.html', target='_blank'"/>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/sql_logo.png" alt="SQL analysis" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">SQL Projects</h2>
+          <div class="btn-container">
+            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='sql_project.html', target='_blank'"/>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/python_logo.png" alt="Python analysis" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Python Projects</h2>
+          <div class="btn-container">
+            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='PYTHON_PROJECTS.html', target='_blank'"/>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/excel_logo.png" alt="Excel analysis" class="project-img"/>
+          </div>
+          <h2 class="experience-sub-title project-title">Excel Projects</h2>
+          <div class="btn-container">
+            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='EXCEL_PROJECTS.html', target='_blank'"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+        <p><a href="mailto:parijatprasun0@gmail.com">parijatprasun0@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+        <p><a onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/certificates.jpg" alt="Certificates icon" class="icon contact-icon"/>
+        <p><a onclick="location.href='ca.html', target='_blank'">Certificates</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Tools</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>&#10024 Crafted with curiosity &#128640 &#169; 2024 Parijat Prasun</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

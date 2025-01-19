@@ -8,16 +8,112 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <style>
+    /* Black Theme */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header, footer, .section__pic-container, .btn-container, .nav-links, .hamburger-menu, .section-container, .contact-info-container {
+      background-color: #1c1c1c;
+    }
+
+    .logo {
+      color: #e0e0e0;
+    }
+
+    .nav-links li, .hamburger-menu div, .socials-container img {
+      color: #e0e0e0;
+    }
+
+    .play-button {
+      color: #fff;
+      font-size: 24px;
+      background-color: #ff6600;
+      padding: 10px;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+    }
+
+    .play-button:hover {
+      background-color: #ff3300;
+    }
+
     .section__pic-container {
       border-radius: 50%;
       overflow: hidden;
     }
-    .play-button {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+    .btn-container button {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
       cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .btn-container button:hover {
+      background-color: #ff3300;
+    }
+
+    .about-pic, .project-img, .icon {
+      max-width: 100%;
+    }
+
+    .icon {
+      max-width: 25px;
+    }
+
+    .experience-details-container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .details-container {
+      width: 45%;
+      margin: 20px;
+    }
+
+    .experience-sub-title, .title {
+      color: #ff6600;
+    }
+
+    footer {
+      background-color: #1c1c1c;
+      text-align: center;
+      padding: 10px;
+      color: #e0e0e0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .contact-info-upper-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0;
+    }
+
+    .contact-info-container {
+      text-align: center;
+      margin: 0 20px;
+    }
+    
+    .contact-info-container img {
+      width: 30px;
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -178,71 +274,39 @@
           </div>
           <h2 class="experience-sub-title project-title">Power BI Projects</h2>
           <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='power_bi_projects.html', target='_blank'"/>
+            <button class="btn btn-color-2" onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')">View Projects</button>
           </div>
         </div>
-        <div class="details-container color-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title project-title">CodeX Survey Analysis</h2>
           <div class="article-container">
-            <img src="./assets/sql_logo.png" alt="SQL analysis" class="project-img"/>
+            <img src="./assets/codex-survey.png" alt="CodeX Survey" class="project-img"/>
           </div>
-          <h2 class="experience-sub-title project-title">SQL Projects</h2>
           <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='sql_project.html', target='_blank'"/>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/python_logo.png" alt="Python analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Python Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='PYTHON_PROJECTS.html', target='_blank'"/>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/excel_logo.png" alt="Excel analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Excel Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='EXCEL_PROJECTS.html', target='_blank'"/>
+            <button class="btn btn-color-2" onclick="window.open('https://github.com')">View Projects</button>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
   </section>
   <section id="contact">
-    <p class="section__text__p1">Get in Touch</p>
-    <h1 class="title">Contact Me</h1>
+    <p class="section__text__p1">Let’s Connect</p>
+    <h1 class="title">Contact</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-        <p><a href="mailto:parijatprasun0@gmail.com">parijatprasun0@gmail.com</a></p>
+        <img src="./assets/email.png" alt="Email icon"/>
+        <h2>Email</h2>
+        <p><a href="mailto:parijat2000prasun@gmail.com">parijat2000prasun@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-        <p><a onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')">LinkedIn</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/certificates.jpg" alt="Certificates icon" class="icon contact-icon"/>
-        <p><a onclick="location.href='ca.html', target='_blank'">Certificates</a></p>
+        <img src="./assets/phone.png" alt="Phone icon"/>
+        <h2>Phone</h2>
+        <p>+91 98765 43210</p>
       </div>
     </div>
   </section>
   <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Tools</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>&#10024 Crafted with curiosity &#128640 &#169; 2024 Parijat Prasun</p>
+    <p>&copy; 2025 Parijat Prasun. All Rights Reserved.</p>
   </footer>
-  <script src="script.js"></script>
 </body>
 </html>

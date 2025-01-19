@@ -11,6 +11,7 @@
     .section__pic-container {
       border-radius: 50%;
       overflow: hidden;
+      position: relative;
     }
     .play-button {
       position: absolute;
@@ -24,16 +25,15 @@
 <body>
   <nav id="desktop-nav">
     <div class="logo">Parijat Prasun</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Tools</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#contact">Certificates</a></li>
-      </ul>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Tools</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
   </nav>
+
   <nav id="hamburger-nav">
     <div class="logo">Parijat Prasun</div>
     <div class="hamburger-menu">
@@ -42,19 +42,19 @@
         <span></span>
         <span></span>
       </div>
-      <div class="menu-links">
+      <ul class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">About</a></li>
         <li><a href="#experience" onclick="toggleMenu()">Tools</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        <li><a href="#Certificates" onclick="toggleMenu()">Certificates</a></li>
-      </div>
+        <li><a href="#certificates" onclick="toggleMenu()">Certificates</a></li>
+      </ul>
     </div>
   </nav>
+
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/pic.jpg" alt="Parijat's profile picture" style="width: 100%; height: 100%; object-fit: cover;" 
-      onclick="window.open('')"/>
+      <img src="./assets/pic.jpg" alt="Parijat's profile picture" style="width: 100%; height: 100%; object-fit: cover;" />
       <a class="play-button" onclick="window.open('')">▶️</a>
     </div>
     <div class="section__text">
@@ -63,186 +63,122 @@
       <p class="section__text__p2">Data Scientist</p>
       <div class="btn-container">
         <button class="btn btn-color-2" onclick="window.open('./assets/LATEST_RESUME.pdf')">Download CV</button>
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
       </div>
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')"/>
-        <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="window.open('https://github.com/parijat200/project')"/>
+        <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon" onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')" />
+        <img src="./assets/github.png" alt="GitHub profile" class="icon" onclick="window.open('https://github.com/parijat200/project')" />
       </div>
     </div>
   </section>
+
   <section id="about">
     <p class="section__text__p1">Get To Know More</p>
     <h1 class="title">About Me</h1>
     <div class="section-container">
       <div class="circular-image">
-        <img src="./assets/pic.jpg" alt="Profile picture" class="about-pic" height="500px" width="400px"/>
+        <img src="./assets/pic.jpg" alt="Profile picture" class="about-pic" />
       </div>
       <div class="about-details-container">
         <div class="about-containers">
           <div class="details-container">
-            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
             <h3>Education</h3>
-            <p>B.com(Accounts)</p>
+            <p>B.Com (Accounts)</p>
           </div>
         </div>
         <div class="text-container">
           <p>🌐 Welcome to My World of Versatility!</p>
-          <p>Hello! I'm Parijat Prasun, a recent graduate of OdinSchool's Data Science Bootcamp, where I honed my skills in SQL, Python, Power BI, Excel, and the basics of statistics and probability. Throughout the program, I completed several projects that allowed me to apply these tools and skills in practical scenarios.
-
-            I'm a Certified Data Science Professional and a 5-star coder on HackerRank. My expertise lies in Python, SQL, Excel, and Power BI. I'm passionate about decoding data to make informed decisions and designing data solutions that have a positive impact.
-            
-            I'm eager to connect with fellow Data Science professionals. If you're seeking a dedicated and enthusiastic team member, let's chat and explore the possibilities for success. 🤝✨</p>
+          <p>
+            Hello! I'm Parijat Prasun, a recent graduate of OdinSchool's Data Science Bootcamp, where I honed my
+            skills in SQL, Python, Power BI, Excel, and the basics of statistics and probability. I am a Certified
+            Data Science Professional and a 5-star coder on HackerRank. My expertise lies in Python, SQL, Excel,
+            and Power BI.
+          </p>
+          <p>
+            I'm passionate about decoding data to make informed decisions and designing impactful data solutions.
+            Let's connect if you're seeking a dedicated and enthusiastic team member. 🤝✨
+          </p>
         </div>
       </div>
     </div>
   </section>
+
   <section id="experience">
     <p class="section__text__p1">Explore</p>
     <h1 class="title">My Tools</h1>
     <div class="experience-details-container">
       <div class="about-containers">
         <div class="details-container">
-          <h2 class="experience-sub-title">Data Analysis</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>Microsoft Excel</h3>
-                <p>Advance</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>Microsoft Power BI</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>MySQL</h3>
-                <p>Expert</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>Python / Pandas</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>Matplotlib</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>PyMySQL</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>NumPy</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
-              <div>
-                <h3>Seaborn</h3>
-                <p>Intermediate</p>
-              </div>
-            </article>
-          </div>
+          <h2>Data Analysis</h2>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Microsoft Excel</h3>
+              <p>Advanced</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Power BI</h3>
+              <p>Expert</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>MySQL</h3>
+              <p>Expert</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>Python / Pandas</h3>
+              <p>Intermediate</p>
+            </div>
+          </article>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
   </section>
+
   <section id="projects">
     <p class="section__text__p1">Browse My Recent</p>
     <h1 class="title">Projects</h1>
     <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/microsoft-power-bi.png" alt="Data analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Power BI Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='power_bi_projects.html', target='_blank'"/>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/sql_logo.png" alt="SQL analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">SQL Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='sql_project.html', target='_blank'"/>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/python_logo.png" alt="Python analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Python Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='PYTHON_PROJECTS.html', target='_blank'"/>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/excel_logo.png" alt="Excel analysis" class="project-img"/>
-          </div>
-          <h2 class="experience-sub-title project-title">Excel Projects</h2>
-          <div class="btn-container">
-            <img src="./assets/arrow-right.png" alt="arrow-right" class="next" onclick="location.href='EXCEL_PROJECTS.html', target='_blank'"/>
-          </div>
-        </div>
+      <div class="details-container color-container">
+        <img src="./assets/microsoft-power-bi.png" alt="Power BI Projects" class="project-img" />
+        <h2 class="project-title">Power BI Projects</h2>
+        <button onclick="window.open('power_bi_projects.html')">View Projects</button>
+      </div>
+      <div class="details-container color-container">
+        <img src="./assets/sql_logo.png" alt="SQL Projects" class="project-img" />
+        <h2 class="project-title">SQL Projects</h2>
+        <button onclick="window.open('sql_project.html')">View Projects</button>
+      </div>
+      <div class="details-container color-container">
+        <img src="./assets/python_logo.png" alt="Python Projects" class="project-img" />
+        <h2 class="project-title">Python Projects</h2>
+        <button onclick="window.open('PYTHON_PROJECTS.html')">View Projects</button>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
   </section>
+
   <section id="contact">
     <p class="section__text__p1">Get in Touch</p>
     <h1 class="title">Contact Me</h1>
     <div class="contact-info-upper-container">
       <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+        <img src="./assets/email.png" alt="Email" class="icon" />
         <p><a href="mailto:parijatprasun0@gmail.com">parijatprasun0@gmail.com</a></p>
       </div>
       <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-        <p><a onclick="window.open('https://www.linkedin.com/in/parijat-prasun/')">LinkedIn</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/certificates.jpg" alt="Certificates icon" class="icon contact-icon"/>
-        <p><a onclick="location.href='ca.html', target='_blank'">Certificates</a></p>
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+        <p><a href="https://www.linkedin.com/in/parijat-prasun/" target="_blank">LinkedIn</a></p>
       </div>
     </div>
   </section>
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Tools</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <p>&#10024 Crafted with curiosity &#128640 &#169; 2024 Parijat Prasun</p>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
